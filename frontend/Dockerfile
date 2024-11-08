@@ -2,7 +2,7 @@ FROM node:18-alpine as build
 
 WORKDIR /app
 COPY package*.json ./
-ARG BASE_URL=https://imamhatipsporoyunlari.com
+ARG BASE_URL=https://demo.layusoft.com
 ENV REACT_APP_API_URL=${BASE_URL}
 RUN npm install
 COPY . .
